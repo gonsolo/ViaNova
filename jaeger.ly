@@ -198,8 +198,6 @@ Harfe = \new Staff
 	}
 
 
-
-
 ViolineEins = \new Staff
 		\with {
 			instrumentName = "Violine I"
@@ -302,10 +300,10 @@ ViolineZwei = \new Staff
 			}
 		}
 
-Viola = \new Staff
+ViolineVier = \new Staff
 	\with {
-		instrumentName = "Viola"
-		shortInstrumentName = "Vla."
+		instrumentName = "Violine IV"
+		shortInstrumentName = "Vla.IV"
 	}
 	{
 		\clef C
@@ -489,7 +487,6 @@ ViaNovaCello = \new Staff
 	<<
 		\Harfe
 		\new StaffGroup <<
-			\Viola
 			\Kontrabass
 		>>
                 \new StaffGroup <<
@@ -500,6 +497,7 @@ ViaNovaCello = \new Staff
 			\ViolineEins
 			\ViolineZwei
                         \ViolineDrei
+                        \ViolineVier
 			\Cello
                         \ViaNovaCello
                 >>
