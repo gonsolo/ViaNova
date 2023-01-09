@@ -109,7 +109,6 @@ FagottDrei = \new Staff
 	}
 	{
 		\clef G
-		%\transpose bes c
 		\relative bes'' {
 			\key bes \minor
 
@@ -262,39 +261,6 @@ ViolineZwei = \new Staff
 			}
 		}
 
-ViolineDrei = \new Staff
-		\with {
-			instrumentName = "Violine III"
-			shortInstrumentName = "Vln. 3"
-			midiInstrument = "violin"
-		}
-		{
-			\key bes \minor
-			\relative bes, {
-
-				R1 R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R
-			}
-		}
-
 ViolineVier = \new Staff
 	\with {
 		instrumentName = "Violine IV"
@@ -434,7 +400,6 @@ CelloVier = \new Staff
 		R R R R R R R
 	}
 
-
 \score {
 	\header {
 		piece = "I"
@@ -447,7 +412,6 @@ CelloVier = \new Staff
                         \FagottDrei
 			\ViolineEins
 			\ViolineZwei
-                        \ViolineDrei
                         \ViolineVier
 			\CelloZwei
 			\CelloVier
