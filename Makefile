@@ -10,3 +10,5 @@ edit:
 c: clean
 clean:
 	rm -f $(NAME).pdf $(NAME).midi
+ardour:
+	pw-jack /home/gonsolo/src/ardour/gtk2_ardour/ardev
