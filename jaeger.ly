@@ -1,37 +1,3 @@
-Flöte = \new Staff
-	\with {
-		instrumentName = "Flöte"
-		shortInstrumentName = "Flt."
-	}
-	{
-		\tempo "Andante" 4 = 82
-		\clef G
-		\relative bes'' {
-			\key bes \minor
-
-				R1 R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				bes2 f as g ges f e f
-				es des~ des4 es2 f4~ f1 g	
-				ges2 as f ges bes, c des es
-				bes' f as g f1~ f
-
-				bes2 f as g ges f e f es des es c bes1
-		}
-	}
-
 Oboe = \new Staff
 		\with {
 			instrumentName = "Oboe"
@@ -428,29 +394,34 @@ ViaNovaFloete = \new Staff
 			shortInstrumentName = "Vnf."
 		}
 		{
-			\key bes \minor
-			\relative bes, {
+			\tempo "Andante" 4 = 82
+			\clef G
+			\relative bes'' {
+				\key bes \minor
 
-				R1 R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
+					R1 R R R R R R R
+					R R R R R R R R
+					R R R R R R R R
+					R R R R R R R R
 
-				R R R R R R R R
-				R R R R R R R R
+					R R R R R R R R
+					R R R R R R R R
 
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
+					R R R R R R R R
+					R R R R R R R R
+					R R R R R R R R
+					R R R R R R R R
 
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
+					R R R R R R R R
+					R R R R R R R R
+					R R R R R R R R
 
-				R R R R R R R R
-				R R R R R R R
+				        bes2 f as g ges f e f
+					es des~ des4 es2 f4~ f1 g
+					ges2 as f ges bes, c des es
+					bes' f as g f1~ f
+
+					bes2 f as g ges f e f es des es c bes1
 			}
 		}
 
@@ -557,7 +528,6 @@ ViaNovaCello = \new Staff
 	}
 	<<
 		\new StaffGroup <<
-			\Flöte
 			\Oboe
 			\Klarinette
 			\Fagott
