@@ -1,7 +1,42 @@
-Oboe = \new Staff
+Floete = \new Staff
 		\with {
-			instrumentName = "Oboe "
-			shortInstrumentName = "Ob."
+			instrumentName = "Floete"
+			shortInstrumentName = "Fl."
+		}
+		{
+			\tempo "Andante" 4 = 82
+			\clef G
+			\relative bes'' {
+				\key bes \minor
+
+					R1 R R R R R R R
+
+					des1 bes2. f4 as1 bes g2 a ges as f1~ f
+					des'1 bes2. f4 as1 g   ges2 as f g as1 bes
+					bes1 as2. ges4 f1 ges des'1 bes4 des2 des4 bes1~ bes
+					bes2 bes bes bes as as bes bes as as as as bes bes bes bes
+
+					r4 bes8 c des4 c	bes f es f	as2. as4	bes1
+					r4 ges8 as bes4 as	f as es f	des2~ des8 es des c	bes2. r4
+					R1 R R R R R R R
+					R R R R R R R R
+
+					R R R R R R R R
+					R R R R R R R R
+					R R R R R R R R
+					R R R R R R R R
+
+					R R R R R R R R
+				        bes'2 f as g ges f e f es des~ des4 es2 f4~ f1 g
+					ges2 as f ges bes, c des es bes' f as g f1~ f
+					bes2 f as g ges f e f es des es c bes1
+			}
+		}
+
+FagottEins = \new Staff
+		\with {
+			instrumentName = "Fagott I"
+			shortInstrumentName = "Fgt. I"
 		}
 		{
 			\key bes \minor
@@ -16,9 +51,9 @@ Oboe = \new Staff
 
 				r4 bes8 c des4 c	bes f es f	as2. as4	bes1
 				r4 ges8 as bes4 as	f as es f	des2~ des8 es des c	bes2. r4
-
 				r1 r r r r r r r
 				r r r r r r r r
+
 				r r r r r r r r
 				r r r r r r r r
 				r r r r r r r r
@@ -31,14 +66,47 @@ Oboe = \new Staff
 			}
 		}
 
-Klarinette = \new Staff
+FagottZwei = \new Staff
+		\with {
+			instrumentName = "Fagott II"
+			shortInstrumentName = "Fgt. II"
+		}
+		{
+			\clef tenor
+			\relative bes {
+			\key bes \minor
+
+				R1 R R R R R R R
+
+				R R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
+
+				R R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
+
+				R R R R R R R R
+				R R R R R R R R
+				r4 es f g~ | g g a bes | bes2 a4. bes8 | bes2. as4 | g2 f2~ | f4 es d2 | d8 c d es f4 es | f2 f |
+				f2 f4 es des2 c bes as g4 as bes2 c2. c4 g2. g4 bes2. bes4 es,2. f4
+
+				f2 as~ as4 des,4 es f bes as f as g as c2~ c2 f, as f f4 g as f \clef bass bes, b c g
+				ges2 des' \clef C ges bes c des es f \clef bass bes,, des c b bes f bes bes
+				R1 R R R R R R
+			}
+		}
+
+FagottDrei = \new Staff
 	\with {
-		instrumentName = "Klarinette in Bb"
-		shortInstrumentName = "Kln."
+		instrumentName = "Fagott III"
+		shortInstrumentName = "Fgt. III"
 	}
 	{
 		\clef G
-		\transpose bes c
+		%\transpose bes c
 		\relative bes''' {
 			\key bes \minor
 
@@ -79,44 +147,6 @@ Klarinette = \new Staff
 			R1 R R R R R R
 		}
 	}
-
-ViaNovaFagott = \new Staff
-		\with {
-			instrumentName = "Via Nova Fagott"
-			shortInstrumentName = "VNFgt."
-		}
-		{
-			\clef tenor
-			\relative bes {
-			\key bes \minor
-
-				R1 R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				r4 es f g~ g g a bes bes2 a4. bes8 bes2. as4
-				g2 f2~ f4 es d2 d8 c d es f4 es f2 f
-				f2 f4 es des2 c bes as g4 as bes2
-				c2. c4 g2. g4 bes2. bes4 es,2. f4
-
-				f2 as~ as4 des,4 es f bes as f as g as c2~
-				c2 f, as f f4 g as f \clef bass bes, b c g
-				ges2 des' \clef C ges bes c des es f
-				\clef bass
-				bes,, des c b bes f bes bes
-
-				R1 R R R R R R
-			}
-		}
-
 
 
 Harfe = \new Staff
@@ -170,9 +200,9 @@ Harfe = \new Staff
 
 
 
-Violine = \new Staff
+ViolineEins = \new Staff
 		\with {
-			instrumentName = "Violinen I"
+			instrumentName = "Violine I"
 			shortInstrumentName = "Vln. I"
 		}
 		{
@@ -237,7 +267,7 @@ Violine = \new Staff
 
 ViolineZwei = \new Staff
 		\with {
-			instrumentName = "Violinen II"
+			instrumentName = "Violine II"
 			shortInstrumentName = "Vln. II"
 		}
 		{
@@ -315,9 +345,9 @@ Viola = \new Staff
 		}
 	}
 
-Celli = \new Staff
+Cello = \new Staff
 		\with {
-			instrumentName = "Celli"
+			instrumentName = "Cello"
 			shortInstrumentName = "Cl."
 		}
 		{
@@ -326,10 +356,10 @@ Celli = \new Staff
 			\relative bes {
 
 			R1 R R R R R R R
-			R1 R R R R R R R
-			R1 R R R R R R R
-			R1 R R R R R R R
 
+			R1 R R R R R R R
+			R1 R R R R R R R
+			R1 R R R R R R R
 			des1 bes2. f4 as1 g   ges2 as f g as1 bes
 			des1 bes2. f4 as1 g   ges2 as f g as1 bes
 
@@ -365,10 +395,10 @@ Kontrabass = \new Staff
 			\relative bes, {
 
 				R1 R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
 
+				R R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
 				des2^"pizz." bes f as g f ges g bes f as es bes' f as bes
 				des2 bes f as g f ges g bes f as es bes' f as bes
 
@@ -387,47 +417,10 @@ Kontrabass = \new Staff
 			}
 		}
 
-ViaNovaFloete = \new Staff
+ViolineDrei = \new Staff
 		\with {
-			instrumentName = "Via Nova Floete"
-			shortInstrumentName = "Vnf."
-		}
-		{
-			\tempo "Andante" 4 = 82
-			\clef G
-			\relative bes'' {
-				\key bes \minor
-
-					R1 R R R R R R R
-					R R R R R R R R
-					R R R R R R R R
-					R R R R R R R R
-
-					R R R R R R R R
-					R R R R R R R R
-
-					R R R R R R R R
-					R R R R R R R R
-					R R R R R R R R
-					R R R R R R R R
-
-					R R R R R R R R
-					R R R R R R R R
-					R R R R R R R R
-
-				        bes2 f as g ges f e f
-					es des~ des4 es2 f4~ f1 g
-					ges2 as f ges bes, c des es
-					bes' f as g f1~ f
-
-					bes2 f as g ges f e f es des es c bes1
-			}
-		}
-
-ViaNovaVioline = \new Staff
-		\with {
-			instrumentName = "Via Nova Violine"
-			shortInstrumentName = "Vnv."
+			instrumentName = "Violine III"
+			shortInstrumentName = "Vln. 3"
 		}
 		{
 			\key bes \minor
@@ -494,22 +487,20 @@ ViaNovaCello = \new Staff
 		piece = "I"
 	}
 	<<
-		\new StaffGroup <<
-			\Oboe
-			\Klarinette
-		>>
 		\Harfe
 		\new StaffGroup <<
-			\Violine
-			\ViolineZwei
 			\Viola
-			\Celli
 			\Kontrabass
 		>>
                 \new StaffGroup <<
-                        \ViaNovaFloete
-                        \ViaNovaFagott
-                        \ViaNovaVioline
+                        \Floete
+			\FagottEins
+                        \FagottZwei
+                        \FagottDrei
+			\ViolineEins
+			\ViolineZwei
+                        \ViolineDrei
+			\Cello
                         \ViaNovaCello
                 >>
 	>>
