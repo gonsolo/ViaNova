@@ -45,22 +45,22 @@ FagottEins = \new Staff
 			\relative bes' {
 				R1 R R R R R R R
 
-				des1 bes2. f4 as1 bes g2 a ges as f1~ f
-				des'1 bes2. f4 as1 g   ges2 as f g as1 bes
-				bes1 as2. ges4 f1 ges des'1 bes4 des2 des4 bes1~ bes
-				bes2 bes bes bes as as bes bes as as as as bes bes bes bes
+				R1 R R R R R R R
+				R1 R R R R R R R
+				R1 R R R R R R R
+				R1 R R R R R R R
 
-				r4 bes8 c des4 c	bes f es f	as2. as4	bes1
-				r4 ges8 as bes4 as	f as es f	des2~ des8 es des c	bes2. r4
+				R1 R R R R R R R
+				R1 R R R R R R R
 				r1 r r r r r r r
 				r r r r r r r r
 
 				r r r r r r r r
 				r r r r r r r r
 				r r r r r r r r
-				r r r r r r r r
+				%r r r r r r r r
 
-				des'1 bes2. f4 as1 bes g2 a ges as f1~ f
+				des1 bes2. f4 as1 bes g2 a ges as f1~ f
 				des'1 bes2. f4 as1 g   ges2 as f g as1 bes
 				bes1 as2. ges4 f1 ges des'1 bes4 des2 des4 bes1~ bes
 				des1 bes2. f4 as1 bes g2 a ges as f1
