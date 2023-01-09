@@ -298,7 +298,7 @@ ViolineDrei = \new Staff
 ViolineVier = \new Staff
 	\with {
 		instrumentName = "Violine IV"
-		shortInstrumentName = "Vla.IV"
+		shortInstrumentName = "Vln. IV"
 		midiInstrument = "violin"
 	}
 	{
@@ -339,39 +339,6 @@ ViolineVier = \new Staff
 			R1 R R R R R R
 		}
 	}
-
-CelloEins = \new Staff
-		\with {
-			instrumentName = "Cello I"
-			shortInstrumentName = "C. I"
-			midiInstrument = "cello"
-		}
-		{
-			\key bes \minor
-			\relative bes, {
-
-				R1 R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R
-			}
-		}
 
 CelloZwei = \new Staff
 		\with {
@@ -520,7 +487,6 @@ CelloVier = \new Staff
 			\ViolineZwei
                         \ViolineDrei
                         \ViolineVier
-                        \CelloEins
 			\CelloZwei
 			\CelloDrei
 			\CelloVier
