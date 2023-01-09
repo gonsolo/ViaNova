@@ -24,7 +24,7 @@ Floete = \new Staff
 					des'1 bes2. f4 as1 g   ges2 as f g as1 bes
 					bes1 as2. ges4 f1 ges des'1 bes4 des2 des4 bes1~ bes
 
-					bes2 bes bes bes as as bes bes as as as as bes bes bes bes
+					bes2\f bes bes bes as as bes bes as as as as bes bes bes bes
 					r4 bes8 c des4 c	bes f es f	as2. as4	bes1
 					r4 ges8 as bes4 as	f as es f	des2~ des8 es des c	bes2. r4
 
@@ -43,7 +43,7 @@ Floete = \new Staff
 
 					R1 R R R R R R R					% 89
 					R R R R R R R R
-				        bes'2 f as g ges f e f es des~ des4 es2 f4~ f1 g
+				        bes'2\mf f as g ges f e f es des~ des4 es2 f4~ f1 g
 					ges2 as f ges bes, c des es bes' f as g f1~ f
 					bes2 f as g ges f e f es des es c bes1
 			}
@@ -56,14 +56,14 @@ Fagott = \new Staff
 			midiInstrument = "bassoon"
 	}
 	{
-		\clef G
-		\relative bes'' {
+		\clef "bass"
+		\relative bes {
 			\key bes \minor
 
 			R1 R R R R R R R
 			R1 R R R R R R R
 
-			bes2 f as g ges f e f
+			bes2\f f as g ges f e f
 			es des~ des4 es2 f4~ f1 g
 			ges2 as f ges bes, c des es
 			bes' f as g f1~ f
@@ -79,12 +79,10 @@ Fagott = \new Staff
 			R1 R R R R R R R
 			R1 R R R R R R R
 
-			g1 f4 g8 f es2 es4 d8 es g4 f es2 d8 es f g
+			g1\mf f4 g8 f es2 es4 d8 es g4 f es2 d8 es f g
 			a bes c d d2.~ d8 c bes2~ bes4 as bes as g2 f
 			g c, g'4 f es2~ es4 d8 es g4 f es2 d
 			c8 d es f g4 c, g'2~ g8 a bes c d4 c bes2~ bes4 a bes2
-
-			\clef G
 
 			f2 des g4 f es2 es4 d c d es2 d
 			c d b des a c es d
@@ -139,9 +137,8 @@ ViolineEins = \new Staff
 				\ottava #0
 			}
 			\relative bes' {
-				\clef "G"
 
-				des1 bes2. f4 as1 g
+				des1\f bes2. f4 as1 g
 				ges2 as f g as1 bes
 				des1 bes2. f4 as1 g
 				ges2 as f g as1 bes
@@ -198,7 +195,7 @@ ViolineZwei = \new Staff
 				\ottava #0
 			}
 
-			des'1 bes2. f4 as1 g   ges2 as f g as1 bes
+			des'1\f bes2. f4 as1 g   ges2 as f g as1 bes
 			des1 bes2. f4 as1 g   ges2 as f g as1 bes
 
 			\ottava #1
@@ -219,7 +216,7 @@ ViolineZwei = \new Staff
 			as2 bes4 as g a2 bes4 bes2 a4 bes bes c d es~
 			es es d es g f es d c es f2 bes as
 
-			des'1 bes2. f4 as1 bes g2 a ges as f1~ f
+			des'1\mp bes2. f4 as1 bes g2 a ges as f1~ f
 			des'1 bes2. f4 as1 g   ges2 as f g as1 bes
 			bes1 as2. ges4 f1 ges des'1 bes4 des2 des4 bes1~ bes
 			des1 bes2. f4 as1 bes g2 a ges as f1
@@ -242,7 +239,7 @@ CelloLaufVariation = {
 }
 
 CelloPizzicato = {
-	des,2^"pizz." bes f as g f ges g bes f as es bes' f as bes
+	des,2^"pizz."\f bes f as g f ges g bes f as es bes' f as bes
 	des2 bes f as g f ges g bes f as es bes' f as bes
 }
 
