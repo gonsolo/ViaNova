@@ -1,6 +1,6 @@
 Oboe = \new Staff
 		\with {
-			instrumentName = "Oboe"
+			instrumentName = "Oboe "
 			shortInstrumentName = "Ob."
 		}
 		{
@@ -28,7 +28,6 @@ Oboe = \new Staff
 				des'1 bes2. f4 as1 g   ges2 as f g as1 bes
 				bes1 as2. ges4 f1 ges des'1 bes4 des2 des4 bes1~ bes
 				des1 bes2. f4 as1 bes g2 a ges as f1
-
 			}
 		}
 
@@ -81,10 +80,10 @@ Klarinette = \new Staff
 		}
 	}
 
-Fagott = \new Staff
+ViaNovaFagott = \new Staff
 		\with {
-			instrumentName = "Fagott"
-			shortInstrumentName = "Fgt."
+			instrumentName = "Via Nova Fagott"
+			shortInstrumentName = "VNFgt."
 		}
 		{
 			\clef tenor
@@ -425,38 +424,6 @@ ViaNovaFloete = \new Staff
 			}
 		}
 
-ViaNovaFagott = \new Staff
-		\with {
-			instrumentName = "Via Nova Fagott"
-			shortInstrumentName = "Vnfg."
-		}
-		{
-			\key bes \minor
-			\relative bes, {
-
-				R1 R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R
-			}
-		}
-
 ViaNovaVioline = \new Staff
 		\with {
 			instrumentName = "Via Nova Violine"
@@ -530,7 +497,6 @@ ViaNovaCello = \new Staff
 		\new StaffGroup <<
 			\Oboe
 			\Klarinette
-			\Fagott
 		>>
 		\Harfe
 		\new StaffGroup <<
