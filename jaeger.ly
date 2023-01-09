@@ -43,7 +43,6 @@ FagottEins = \new Staff
 		{
 			\key bes \minor
 			\clef tenor
-			%\clef "G"
 			\relative bes' {
 				R1 R R R R R R R
 
@@ -54,13 +53,12 @@ FagottEins = \new Staff
 
 				R1 R R R R R R R
 				R1 R R R R R R R
-				r1 r r r r r r r
-				r r r r r r r r
+				R1 R R R R R R R
+				R1 R R R R R R R
 
-				r r r r r r r r
-				r r r r r r r r
-				r r r r r r r r
-				%r r r r r r r r
+				R1 R R R R R R R
+				R1 R R R R R R R
+				R1 R R R R R R R
 
 				des1 bes2. f4 as1 bes g2 a ges as f1~ f
 				des'1 bes2. f4 as1 g   ges2 as f g as1 bes
@@ -449,6 +447,27 @@ CelloDrei = \new Staff
 			}
 		}
 
+CelloLaufPiano = {
+	bes4\p des f a des f a bes
+	bes,,4 des f g bes f' as bes
+}
+
+CelloLauf = {
+	bes,,4 des f a des f a bes
+	bes,,4 des f g bes f' as bes
+}
+
+CelloLaufVariation = {
+	ges,, des' d ges as a des d
+	ges,, des' d ges as a des d
+}
+
+CelloLaufForte = {
+	bes,,4\f des f a des f a bes
+	bes,,4 des f g bes f' as bes
+}
+
+
 CelloVier = \new Staff
 	\with {
 		instrumentName = "Cello IV"
@@ -460,46 +479,18 @@ CelloVier = \new Staff
 		\key bes \minor
 
 		\relative bes, {
-			bes4\p des f a des f a bes
-			bes,,4 des f g bes f' as bes
-
-			bes,,4 des f a des f a bes
-			bes,,4 des f g bes f' as bes
-
-			bes,,4 des f a des f a bes
-			bes,,4 des f g bes f' as bes
-
-			bes,,4 des f a des f a bes
-			bes,,4 des f g bes f' as bes
-
-			bes,,4 des f a des f a bes
-			bes,,4 des f g bes f' as bes
-
-			bes,,4 des f a des f a bes
-			bes,,4 des f g bes f' as bes
-
-		}
-
-		\relative bes, {
-			ges des' d ges as a des d
-			ges,, des' d ges as a des d
-		}
-
-		\relative bes, {
-			bes4 des f a des f a bes
-			bes,,4 des f g bes f' as bes
-
-			bes,,4 des f a des f a bes
-			bes,,4 des f g bes f' as bes
-
-			bes,,4 des f a des f a bes
-			bes,,4 des f g bes f' as bes
-
-			bes,,4 des f a des f a bes
-			bes,,4 des f g bes f' as bes
-
-			bes,,4 des f a des f a bes
-			bes,,4 des f g bes f' as bes
+			\CelloLaufPiano
+			\CelloLauf
+			\CelloLauf
+			\CelloLauf
+			\CelloLauf
+			\CelloLauf
+			\CelloLaufVariation
+			\CelloLauf
+			\CelloLaufForte				%33
+			\CelloLauf
+			\CelloLauf
+			\CelloLauf
 		}
 
 		R1 R R R R R R R
