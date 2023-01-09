@@ -34,40 +34,6 @@ Floete = \new Staff
 			}
 		}
 
-FagottZwei = \new Staff
-		\with {
-			instrumentName = "Fagott II"
-			shortInstrumentName = "Fgt. II"
-			midiInstrument = "bassoon"
-		}
-		{
-			\clef tenor
-			\relative bes {
-			\key bes \minor
-
-				R1 R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-				r4 es f g~ | g g a bes | bes2 a4. bes8 | bes2. as4 | g2 f2~ | f4 es d2 | d8 c d es f4 es | f2 f |
-				f2 f4 es des2 c bes as g4 as bes2 c2. c4 g2. g4 bes2. bes4 es,2. f4
-
-				f2 as~ as4 des,4 es f bes as f as g as c2~ c2 f, as f f4 g as f \clef bass bes, b c g
-				ges2 des' \clef C ges bes c des es f \clef bass bes,, des c b bes f bes bes
-				R1 R R R R R R
-			}
-		}
-
 FagottDrei = \new Staff
 	\with {
 		instrumentName = "Fagott III"
@@ -328,11 +294,11 @@ Cello = \new Staff
 		bes as bes4 as g2 g4 d g f es2 c4 d
 		d2 g, as4 a bes2 bes4 as bes as g1
 			
-		R1 R R R R R R R
-		R R R R R R R R
-		R R R R R R R R
-		R R R R R R R R
-		R R R R R R R
+		r4 es f g~ | g g a bes | bes2 a4. bes8 | bes2. as4 | g2 f2~ | f4 es d2 | d8 c d es f4 es | f2 f |
+		f2 f4 es des2 c bes as g4 as bes2 c2. c4 g2. g4 bes2. bes4 es,2. f4
+		f2 as~ as4 des,4 es f bes as f as g as c2~ c2 f, as f f4 g as f \clef bass bes, b c g
+		ges2 des' \clef C ges bes c des es f \clef bass bes,, des c b bes f bes bes
+		R1 R R R R R R
 	}
 
 \score {
@@ -342,7 +308,6 @@ Cello = \new Staff
 	<<
                 \new StaffGroup <<
                         \Floete
-                        \FagottZwei
                         \FagottDrei
 			\ViolineEins
 			\ViolineZwei
