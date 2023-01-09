@@ -1,3 +1,11 @@
+%  1: Allein
+%  9: Melodie
+% 25: Variation
+% 33: Pizzicato
+% 48: Fuge
+
+
+
 Floete = \new Staff
 		\with {
 			instrumentName = "Flöte"
@@ -15,18 +23,25 @@ Floete = \new Staff
 					des1\mp bes2. f4 as1 bes g2 a ges as f1~ f
 					des'1 bes2. f4 as1 g   ges2 as f g as1 bes
 					bes1 as2. ges4 f1 ges des'1 bes4 des2 des4 bes1~ bes
-					bes2 bes bes bes as as bes bes as as as as bes bes bes bes
 
+					bes2 bes bes bes as as bes bes as as as as bes bes bes bes
 					r4 bes8 c des4 c	bes f es f	as2. as4	bes1
 					r4 ges8 as bes4 as	f as es f	des2~ des8 es des c	bes2. r4
-					R1 R R R R R R R
-					R R R R R R R R
 
-					R R R R R R R R
-					R R R R R R R R
-					R R R R R R R R
-					R R R R R R R R
+					f1 f4 g es g f2 es des es4 f				% 49
+					r es f as bes as f as c1 des
+					r4 des c des es2 c4 des bes2 c des g,
+					r4 ges as ges r des f des r bes des bes des es f as~
 
+					as2 g as4 bes c2~ c b c4 d es2~
+					es2 d des c bes4 c2 f,4 as2 g2~
+					g2 a bes c r4 c bes c es c bes2~
+					bes2 g a bes~ bes es, f g~
+
+					g2 c, d es~ es g d1
+					c1~ c bes c2 b
+
+					R1 R R R R R R R					% 89
 					R R R R R R R R
 				        bes'2 f as g ges f e f es des~ des4 es2 f4~ f1 g
 					ges2 as f ges bes, c des es bes' f as g f1~ f
@@ -156,44 +171,6 @@ ViolineEins = \new Staff
 			}
 		}
 
-ViolineZwei = \new Staff
-		\with {
-			instrumentName = "Violine II"
-			shortInstrumentName = "Vln. II"
-			midiInstrument = "violin"
-		}
-		{
-			\key bes \minor
-			\clef "G"
-			\relative bes' {
-				R1 R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				f1 f4 g es g f2 es des es4 f
-				r es f as bes as f as c1 des
-				r4 des c des es2 c4 des bes2 c des g,
-				r4 ges as ges r des f des r bes des bes des es f as~
-
-				as2 g as4 bes c2~ c b c4 d es2~
-				es2 d des c bes4 c2 f,4 as2 g2~
-				g2 a bes c r4 c bes c es c bes2~
-				bes2 g a bes~ bes es, f g~
-
-				g2 c, d es~ es g d1
-				c1~ c bes c2 b
-
-				R1 R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R
-			}
-		}
-
 ViolineVier = \new Staff
 	\with {
 		instrumentName = "Violine IV"
@@ -310,7 +287,6 @@ Cello = \new Staff
                         \Floete
                         \Fagott
 			\ViolineEins
-			\ViolineZwei
                         \ViolineVier
 			\Cello
                 >>
