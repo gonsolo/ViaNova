@@ -2,6 +2,7 @@ Floete = \new Staff
 		\with {
 			instrumentName = "Floete"
 			shortInstrumentName = "Fl."
+			midiInstrument = "flute"
 		}
 		{
 			\tempo "Andante" 4 = 82
@@ -37,6 +38,7 @@ FagottEins = \new Staff
 		\with {
 			instrumentName = "Fagott I"
 			shortInstrumentName = "Fgt. I"
+			midiInstrument = "bassoon"
 		}
 		{
 			\key bes \minor
@@ -71,6 +73,7 @@ FagottZwei = \new Staff
 		\with {
 			instrumentName = "Fagott II"
 			shortInstrumentName = "Fgt. II"
+			midiInstrument = "bassoon"
 		}
 		{
 			\clef tenor
@@ -104,6 +107,7 @@ FagottDrei = \new Staff
 	\with {
 		instrumentName = "Fagott III"
 		shortInstrumentName = "Fgt. III"
+			midiInstrument = "bassoon"
 	}
 	{
 		\clef G
@@ -150,59 +154,11 @@ FagottDrei = \new Staff
 	}
 
 
-CelloVier = \new Staff
-	\with {
-		instrumentName = "Cello IV"
-		shortInstrumentName = "C. IV"
-	}
-	{
-		\clef G
-		\key bes \minor
-
-		bes4 des' f' a' des'' f'' a'' bes''
-		bes4 des' f' g' bes' f'' as'' bes''
-		bes4 des' f' a' des'' f'' a'' bes''
-		bes4 des' f' g' bes' f'' as'' bes''
-		bes4 des' f' a' des'' f'' a'' bes''
-		bes4 des' f' g' bes' f'' as'' bes''
-		bes4 des' f' a' des'' f'' a'' bes''
-		bes4 des' f' g' bes' f'' as'' bes''
-		bes4 des' f' a' des'' f'' a'' bes''
-		bes4 des' f' g' bes' f'' as'' bes''
-		bes4 des' f' a' des'' f'' a'' bes''
-		bes4 des' f' g' bes' f'' as'' bes''
-
-		ges des' d' ges' as' a' des'' d''
-		ges des' d' ges' as' a' des'' d''
-
-		bes4 des' f' a' des'' f'' a'' bes''
-		bes4 des' f' g' bes' f'' as'' bes''
-		bes4 des' f' a' des'' f'' a'' bes''
-		bes4 des' f' g' bes' f'' as'' bes''
-		bes4 des' f' a' des'' f'' a'' bes''
-		bes4 des' f' g' bes' f'' as'' bes''
-		bes4 des' f' a' des'' f'' a'' bes''
-		bes4 des' f' g' bes' f'' as'' bes''
-		bes4 des' f' a' des'' f'' a'' bes''
-		bes4 des' f' g' bes' f'' as'' bes''
-
-		R1 R R R R R R R
-		R R R R R R R R
-		R R R R R R R R
-		R R R R R R R R
-		R R R R R R R R
-		R R R R R R R R
-		R R R R R R R R
-		R R R R R R R R
-		R R R R R R R R
-		R R R R R R R
-	}
-
-
 ViolineEins = \new Staff
 		\with {
 			instrumentName = "Violine I"
 			shortInstrumentName = "Vln. I"
+			midiInstrument = "violin"
 		}
 		{
 			\key bes \minor
@@ -210,7 +166,7 @@ ViolineEins = \new Staff
 				\clef G
 				\ottava #2
 
-				<a bes c des>1~ <a bes c des>1
+				<a bes c des>1\ppp~ <a bes c des>1
 				<as? bes c des>1~ <as bes c des>1
 				<a bes c des>1~ <a bes c des>1
 				<as? bes c des>1~ <as bes c des>1
@@ -268,6 +224,7 @@ ViolineZwei = \new Staff
 		\with {
 			instrumentName = "Violine II"
 			shortInstrumentName = "Vln. II"
+			midiInstrument = "violin"
 		}
 		{
 			\key bes \minor
@@ -301,10 +258,44 @@ ViolineZwei = \new Staff
 			}
 		}
 
+ViolineDrei = \new Staff
+		\with {
+			instrumentName = "Violine III"
+			shortInstrumentName = "Vln. 3"
+			midiInstrument = "violin"
+		}
+		{
+			\key bes \minor
+			\relative bes, {
+
+				R1 R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
+
+				R R R R R R R R
+				R R R R R R R R
+
+				R R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
+
+				R R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
+
+				R R R R R R R R
+				R R R R R R R
+			}
+		}
+
 ViolineVier = \new Staff
 	\with {
 		instrumentName = "Violine IV"
 		shortInstrumentName = "Vla.IV"
+		midiInstrument = "violin"
 	}
 	{
 		\clef "G"
@@ -345,10 +336,44 @@ ViolineVier = \new Staff
 		}
 	}
 
+CelloEins = \new Staff
+		\with {
+			instrumentName = "Cello I"
+			shortInstrumentName = "C. I"
+			midiInstrument = "cello"
+		}
+		{
+			\key bes \minor
+			\relative bes, {
+
+				R1 R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
+
+				R R R R R R R R
+				R R R R R R R R
+
+				R R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
+
+				R R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
+				R R R R R R R R
+
+				R R R R R R R R
+				R R R R R R R
+			}
+		}
+
 CelloZwei = \new Staff
 		\with {
 			instrumentName = "Cello II"
 			shortInstrumentName = "Cl. II"
+			midiInstrument = "cello"
 		}
 		{
 			\clef bass
@@ -388,6 +413,7 @@ CelloDrei = \new Staff
 		\with {
 			instrumentName = "Cello III"
 			shortInstrumentName = "C. III"
+			midiInstrument = "cello"
 		}
 		{
 			\clef bass
@@ -417,69 +443,62 @@ CelloDrei = \new Staff
 			}
 		}
 
-ViolineDrei = \new Staff
-		\with {
-			instrumentName = "Violine III"
-			shortInstrumentName = "Vln. 3"
+CelloVier = \new Staff
+	\with {
+		instrumentName = "Cello IV"
+		shortInstrumentName = "C. IV"
+		midiInstrument = "cello"
+	}
+	{
+		\clef "bass"
+		\key bes \minor
+
+		\relative bes, {
+			bes4 des f a des f a bes
+			bes,,4 des f g bes f' as bes
+
+			bes,,4 des f a des f a bes
+			bes,,4 des f g bes f' as bes
+
+			bes,,4 des f a des f a bes
+			bes,,4 des f g bes f' as bes
+
+			bes,,4 des f a des f a bes
+			bes,,4 des f g bes f' as bes
+
+			bes,,4 des f a des f a bes
+			bes,,4 des f g bes f' as bes
+
+			bes,,4 des f a des f a bes
+			bes,,4 des f g bes f' as bes
+
 		}
-		{
-			\key bes \minor
-			\relative bes, {
 
-				R1 R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
+		ges des' d' ges' as' a' des'' d''
+		ges des' d' ges' as' a' des'' d''
 
-				R R R R R R R R
-				R R R R R R R R
+		bes4 des' f' a' des'' f'' a'' bes''
+		bes4 des' f' g' bes' f'' as'' bes''
+		bes4 des' f' a' des'' f'' a'' bes''
+		bes4 des' f' g' bes' f'' as'' bes''
+		bes4 des' f' a' des'' f'' a'' bes''
+		bes4 des' f' g' bes' f'' as'' bes''
+		bes4 des' f' a' des'' f'' a'' bes''
+		bes4 des' f' g' bes' f'' as'' bes''
+		bes4 des' f' a' des'' f'' a'' bes''
+		bes4 des' f' g' bes' f'' as'' bes''
 
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R
-			}
-		}
-
-CelloEins = \new Staff
-		\with {
-			instrumentName = "Cello I"
-			shortInstrumentName = "C. I"
-		}
-		{
-			\key bes \minor
-			\relative bes, {
-
-				R1 R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R
-			}
-		}
+		R1 R R R R R R R
+		R R R R R R R R
+		R R R R R R R R
+		R R R R R R R R
+		R R R R R R R R
+		R R R R R R R R
+		R R R R R R R R
+		R R R R R R R R
+		R R R R R R R R
+		R R R R R R R
+	}
 
 
 \score {
