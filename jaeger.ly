@@ -343,10 +343,10 @@ ViolineVier = \new Staff
 		}
 	}
 
-Cello = \new Staff
+CelloZwei = \new Staff
 		\with {
-			instrumentName = "Cello"
-			shortInstrumentName = "Cl."
+			instrumentName = "Cello II"
+			shortInstrumentName = "Cl. II"
 		}
 		{
 			\clef bass
@@ -382,10 +382,10 @@ Cello = \new Staff
 			}
 		}
 
-Kontrabass = \new Staff
+CelloDrei = \new Staff
 		\with {
-			instrumentName = "Kontrabass"
-			shortInstrumentName = "Kb."
+			instrumentName = "Cello III"
+			shortInstrumentName = "C. III"
 		}
 		{
 			\clef bass
@@ -447,10 +447,10 @@ ViolineDrei = \new Staff
 			}
 		}
 
-ViaNovaCello = \new Staff
+CelloEins = \new Staff
 		\with {
-			instrumentName = "Via Nova Cello"
-			shortInstrumentName = "Vnc."
+			instrumentName = "Cello I"
+			shortInstrumentName = "C. I"
 		}
 		{
 			\key bes \minor
@@ -486,9 +486,6 @@ ViaNovaCello = \new Staff
 	}
 	<<
 		\Harfe
-		\new StaffGroup <<
-			\Kontrabass
-		>>
                 \new StaffGroup <<
                         \Floete
 			\FagottEins
@@ -498,8 +495,9 @@ ViaNovaCello = \new Staff
 			\ViolineZwei
                         \ViolineDrei
                         \ViolineVier
-			\Cello
-                        \ViaNovaCello
+                        \CelloEins
+			\CelloZwei
+			\CelloDrei
                 >>
 	>>
         \layout {}
