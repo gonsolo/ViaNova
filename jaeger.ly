@@ -273,46 +273,6 @@ ViolineVier = \new Staff
 		}
 	}
 
-CelloZwei = \new Staff
-		\with {
-			instrumentName = "Cello II"
-			shortInstrumentName = "Cl. II"
-			midiInstrument = "cello"
-		}
-		{
-			\clef bass
-			\key bes \minor
-			\relative bes {
-
-			R1 R R R R R R R
-
-			R1 R R R R R R R
-			R1 R R R R R R R
-			R1 R R R R R R R
-			des1 bes2. f4 as1 g   ges2 as f g as1 bes
-			des1 bes2. f4 as1 g   ges2 as f g as1 bes
-
-			r2 f4 g as2 g f g es g 
-			ges f g f as g f es
-			bes c des f~ f e f as~
-			as des c bes f4 as2 as4 g2 c,
-
-			des4 es f2 f4 g as2 as4 bes b2 c es
-			r4 es d bes des2 c bes a4 bes b2 bes4 b
-			c2 g c4 bes a2 as g as4 bes c d
-			es4. d8 es4 f es es8 d c2~ c b as bes
-
-			bes as bes4 as g2 g4 d g f es2 c4 d
-			d2 g, as4 a bes2 bes4 as bes as g1
-			
-			R1 R R R R R R R
-			R R R R R R R R
-			R R R R R R R R
-			R R R R R R R R
-			R R R R R R R
-			}
-		}
-
 CelloLaufPiano = {
 	bes4\p des f a des f a bes
 	bes,,4 des f g bes f' as bes
@@ -333,10 +293,10 @@ CelloPizzicato = {
 	des2 bes f as g f ges g bes f as es bes' f as bes
 }
 
-CelloVier = \new Staff
+Cello = \new Staff
 	\with {
-		instrumentName = "Cello IV"
-		shortInstrumentName = "C. IV"
+		instrumentName = "Cello"
+		shortInstrumentName = "C."
 		midiInstrument = "cello"
 	}
 	{
@@ -355,12 +315,20 @@ CelloVier = \new Staff
 			\CelloPizzicato
 		}
 
+		r2 f4 g as2 g f g es g 
+		ges f g f as g f es
+		bes c des f~ f e f as~
+		as des c bes f4 as2 as4 g2 c,
+
+		des4 es f2 f4 g as2 as4 bes b2 c es
+		r4 es d bes des2 c bes a4 bes b2 bes4 b
+		c2 g c4 bes a2 as g as4 bes c d
+		es4. d8 es4 f es es8 d c2~ c b as bes
+
+		bes as bes4 as g2 g4 d g f es2 c4 d
+		d2 g, as4 a bes2 bes4 as bes as g1
+			
 		R1 R R R R R R R
-		R R R R R R R R
-		R R R R R R R R
-		R R R R R R R R
-		R R R R R R R R
-		R R R R R R R R
 		R R R R R R R R
 		R R R R R R R R
 		R R R R R R R R
@@ -379,8 +347,7 @@ CelloVier = \new Staff
 			\ViolineEins
 			\ViolineZwei
                         \ViolineVier
-			\CelloZwei
-			\CelloVier
+			\Cello
                 >>
 	>>
         \layout {}
