@@ -380,40 +380,6 @@ CelloZwei = \new Staff
 			}
 		}
 
-CelloDrei = \new Staff
-		\with {
-			instrumentName = "Cello III"
-			shortInstrumentName = "C. III"
-			midiInstrument = "cello"
-		}
-		{
-			\clef bass
-			\key bes \minor
-			\relative bes, {
-
-				R1 R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				des2^"pizz." bes f as g f ges g bes f as es bes' f as bes
-				des2 bes f as g f ges g bes f as es bes' f as bes
-
-				R1 R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-				R R R R R R R R
-
-				R R R R R R R R
-				R R R R R R R
-			}
-		}
-
 CelloLaufPiano = {
 	bes4\p des f a des f a bes
 	bes,,4 des f g bes f' as bes
@@ -429,11 +395,10 @@ CelloLaufVariation = {
 	ges,, des' d ges as a des d
 }
 
-CelloLaufForte = {
-	bes,,4\f des f a des f a bes
-	bes,,4 des f g bes f' as bes
+CelloPizzicato = {
+	des,2^"pizz." bes f as g f ges g bes f as es bes' f as bes
+	des2 bes f as g f ges g bes f as es bes' f as bes
 }
-
 
 CelloVier = \new Staff
 	\with {
@@ -454,10 +419,7 @@ CelloVier = \new Staff
 			\CelloLauf
 			\CelloLaufVariation
 			\CelloLauf
-			\CelloLaufForte				%33
-			\CelloLauf
-			\CelloLauf
-			\CelloLauf
+			\CelloPizzicato
 		}
 
 		R1 R R R R R R R
@@ -488,7 +450,6 @@ CelloVier = \new Staff
                         \ViolineDrei
                         \ViolineVier
 			\CelloZwei
-			\CelloDrei
 			\CelloVier
                 >>
 	>>
