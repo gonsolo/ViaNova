@@ -181,11 +181,22 @@ ViolineZwei = \new Staff
 		\clef "G"
 		\relative bes {
 			\key bes \minor
+			\relative bes''' {
+				\clef G
+				\ottava #2
 
-			R1 R R R R R R R
-			R1 R R R R R R R
-			R1 R R R R R R R
-			R1 R R R R R R R
+				\arpeggioBracket
+				\HochPiano
+				\Hoch
+				\Hoch
+				\Hoch
+				\Hoch
+				\Hoch
+				\HochZwei
+				\Hoch
+
+				\ottava #0
+			}
 
 			des'1 bes2. f4 as1 g   ges2 as f g as1 bes
 			des1 bes2. f4 as1 g   ges2 as f g as1 bes
