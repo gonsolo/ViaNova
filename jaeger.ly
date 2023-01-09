@@ -149,10 +149,10 @@ FagottDrei = \new Staff
 	}
 
 
-Harfe = \new Staff
+CelloVier = \new Staff
 	\with {
-		instrumentName = "Harfe"
-		shortInstrumentName = "Ha."
+		instrumentName = "Cello IV"
+		shortInstrumentName = "C. IV"
 	}
 	{
 		\clef G
@@ -485,7 +485,6 @@ CelloEins = \new Staff
 		piece = "I"
 	}
 	<<
-		\Harfe
                 \new StaffGroup <<
                         \Floete
 			\FagottEins
@@ -498,6 +497,7 @@ CelloEins = \new Staff
                         \CelloEins
 			\CelloZwei
 			\CelloDrei
+			\CelloVier
                 >>
 	>>
         \layout {}
