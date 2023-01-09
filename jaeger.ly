@@ -171,15 +171,14 @@ ViolineEins = \new Staff
 			}
 		}
 
-ViolineVier = \new Staff
+ViolineZwei = \new Staff
 	\with {
-		instrumentName = "Violine IV"
-		shortInstrumentName = "Vln. IV"
+		instrumentName = "Violine II"
+		shortInstrumentName = "Vln. II"
 		midiInstrument = "violin"
 	}
 	{
 		\clef "G"
-		%\clef C
 		\relative bes {
 			\key bes \minor
 
@@ -287,7 +286,7 @@ Cello = \new Staff
                         \Floete
                         \Fagott
 			\ViolineEins
-                        \ViolineVier
+                        \ViolineZwei
 			\Cello
                 >>
 	>>
