@@ -1,6 +1,6 @@
 Floete = \new Staff
 		\with {
-			instrumentName = "Floete"
+			instrumentName = "Flöte"
 			shortInstrumentName = "Fl."
 			midiInstrument = "flute"
 		}
@@ -12,7 +12,7 @@ Floete = \new Staff
 
 					R1 R R R R R R R
 
-					des1 bes2. f4 as1 bes g2 a ges as f1~ f
+					des1\mp bes2. f4 as1 bes g2 a ges as f1~ f
 					des'1 bes2. f4 as1 g   ges2 as f g as1 bes
 					bes1 as2. ges4 f1 ges des'1 bes4 des2 des4 bes1~ bes
 					bes2 bes bes bes as as bes bes as as as as bes bes bes bes
@@ -154,6 +154,21 @@ FagottDrei = \new Staff
 	}
 
 
+HochPiano = {
+	<a bes c des>1\arpeggio\ppp~ <a bes c des>1
+	<as? bes c des>1\arpeggio~ <as bes c des>1
+}
+
+Hoch = {
+	<a bes c des>1\arpeggio~ <a bes c des>1
+	<as? bes c des>1\arpeggio~ <as bes c des>1
+}
+
+HochZwei = {
+	<ges bes c des>1\arpeggio~ <ges bes c des>1
+	<as bes c des>1\arpeggio~ <as bes c des>1
+}
+
 ViolineEins = \new Staff
 		\with {
 			instrumentName = "Violine I"
@@ -166,24 +181,15 @@ ViolineEins = \new Staff
 				\clef G
 				\ottava #2
 
-				<a bes c des>1\ppp~ <a bes c des>1
-				<as? bes c des>1~ <as bes c des>1
-				<a bes c des>1~ <a bes c des>1
-				<as? bes c des>1~ <as bes c des>1
-				<a bes c des>1~ <a bes c des>1
-				<as? bes c des>1~ <as bes c des>1
-				<a bes c des>1~ <a bes c des>1
-				<as? bes c des>1~ <as bes c des>1
-				<a bes c des>1~ <a bes c des>1
-				<as? bes c des>1~ <as bes c des>1
-				<a bes c des>1~ <a bes c des>1
-				<as? bes c des>1~ <as bes c des>1
-
-				<ges bes c des>1~ <ges bes c des>1
-				<as bes c des>1~ <as bes c des>1
-
-				<a bes c des>1~ <a bes c des>1
-				<as bes c des>1~ <as bes c des>1
+				\arpeggioBracket
+				\HochPiano
+				\Hoch
+				\Hoch
+				\Hoch
+				\Hoch
+				\Hoch
+				\HochZwei
+				\Hoch
 
 				\ottava #0
 			}
@@ -454,7 +460,7 @@ CelloVier = \new Staff
 		\key bes \minor
 
 		\relative bes, {
-			bes4 des f a des f a bes
+			bes4\p des f a des f a bes
 			bes,,4 des f g bes f' as bes
 
 			bes,,4 des f a des f a bes
@@ -474,19 +480,27 @@ CelloVier = \new Staff
 
 		}
 
-		ges des' d' ges' as' a' des'' d''
-		ges des' d' ges' as' a' des'' d''
+		\relative bes, {
+			ges des' d ges as a des d
+			ges,, des' d ges as a des d
+		}
 
-		bes4 des' f' a' des'' f'' a'' bes''
-		bes4 des' f' g' bes' f'' as'' bes''
-		bes4 des' f' a' des'' f'' a'' bes''
-		bes4 des' f' g' bes' f'' as'' bes''
-		bes4 des' f' a' des'' f'' a'' bes''
-		bes4 des' f' g' bes' f'' as'' bes''
-		bes4 des' f' a' des'' f'' a'' bes''
-		bes4 des' f' g' bes' f'' as'' bes''
-		bes4 des' f' a' des'' f'' a'' bes''
-		bes4 des' f' g' bes' f'' as'' bes''
+		\relative bes, {
+			bes4 des f a des f a bes
+			bes,,4 des f g bes f' as bes
+
+			bes,,4 des f a des f a bes
+			bes,,4 des f g bes f' as bes
+
+			bes,,4 des f a des f a bes
+			bes,,4 des f g bes f' as bes
+
+			bes,,4 des f a des f a bes
+			bes,,4 des f g bes f' as bes
+
+			bes,,4 des f a des f a bes
+			bes,,4 des f g bes f' as bes
+		}
 
 		R1 R R R R R R R
 		R R R R R R R R

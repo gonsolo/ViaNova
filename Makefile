@@ -6,7 +6,7 @@ $(NAME).pdf: $(NAME).ly jaeger.ly
 	lilypond $<
 e: edit
 edit:
-	vi jaeger.ly +167 # $(NAME).ly
+	vi jaeger.ly +169 # $(NAME).ly
 c: clean
 clean:
 	rm -f $(NAME).pdf $(NAME).midi
