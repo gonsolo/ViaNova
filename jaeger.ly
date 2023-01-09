@@ -268,7 +268,7 @@ Cello = \new Staff
 			\CelloPizzicato
 		}
 
-		r2 f4 g as2 g f g es g 
+		r2^"arco" f4 g as2 g f g es g
 		ges f g f as g f es
 		bes c des f~ f e f as~
 		as des c bes f4 as2 as4 g2 c,
@@ -285,12 +285,12 @@ Cello = \new Staff
 		f2 f4 es des2 c bes as g4 as bes2 c2. c4 g2. g4 bes2. bes4 es,2. f4
 		f2 as~ as4 des,4 es f bes as f as g as c2~ c2 f, as f f4 g as f \clef bass bes, b c g
 		ges2 des' \clef C ges bes c des es f \clef bass bes,, des c b bes f bes bes
-		R1 R R R R R R
+		R1 R R R R R R_"rit."
 	}
 
 \score {
 	\header {
-		piece = "I"
+		%piece = "I"
 	}
 	<<
                 \new StaffGroup <<
