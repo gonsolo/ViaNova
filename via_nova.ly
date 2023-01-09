@@ -4,7 +4,7 @@
 
 \header {
 	title = "Via Venatoris"
-	composer = "A. Wendleder"
+	%composer = "A. Wendleder"
 	tagline = ##f
 }
 

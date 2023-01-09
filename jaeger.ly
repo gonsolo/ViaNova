@@ -40,8 +40,9 @@ FagottEins = \new Staff
 		}
 		{
 			\key bes \minor
-			\clef "G"
-			\relative bes'' {
+			\clef tenor
+			%\clef "G"
+			\relative bes' {
 				R1 R R R R R R R
 
 				des1 bes2. f4 as1 bes g2 a ges as f1~ f
@@ -107,7 +108,7 @@ FagottDrei = \new Staff
 	{
 		\clef G
 		%\transpose bes c
-		\relative bes''' {
+		\relative bes'' {
 			\key bes \minor
 
 			R1 R R R R R R R
@@ -210,17 +211,17 @@ ViolineEins = \new Staff
 				\ottava #2
 
 				<a bes c des>1~ <a bes c des>1
-				<as bes c des>1~ <as bes c des>1
+				<as? bes c des>1~ <as bes c des>1
 				<a bes c des>1~ <a bes c des>1
-				<as bes c des>1~ <as bes c des>1
+				<as? bes c des>1~ <as bes c des>1
 				<a bes c des>1~ <a bes c des>1
-				<as bes c des>1~ <as bes c des>1
+				<as? bes c des>1~ <as bes c des>1
 				<a bes c des>1~ <a bes c des>1
-				<as bes c des>1~ <as bes c des>1
+				<as? bes c des>1~ <as bes c des>1
 				<a bes c des>1~ <a bes c des>1
-				<as bes c des>1~ <as bes c des>1
+				<as? bes c des>1~ <as bes c des>1
 				<a bes c des>1~ <a bes c des>1
-				<as bes c des>1~ <as bes c des>1
+				<as? bes c des>1~ <as bes c des>1
 
 				<ges bes c des>1~ <ges bes c des>1
 				<as bes c des>1~ <as bes c des>1
@@ -306,7 +307,8 @@ ViolineVier = \new Staff
 		shortInstrumentName = "Vla.IV"
 	}
 	{
-		\clef C
+		\clef "G"
+		%\clef C
 		\relative bes {
 			\key bes \minor
 
