@@ -34,10 +34,10 @@ Floete = \new Staff
 			}
 		}
 
-FagottDrei = \new Staff
+Fagott = \new Staff
 	\with {
-		instrumentName = "Fagott III"
-		shortInstrumentName = "Fgt. III"
+		instrumentName = "Fagott"
+		shortInstrumentName = "Fgt."
 			midiInstrument = "bassoon"
 	}
 	{
@@ -308,7 +308,7 @@ Cello = \new Staff
 	<<
                 \new StaffGroup <<
                         \Floete
-                        \FagottDrei
+                        \Fagott
 			\ViolineEins
 			\ViolineZwei
                         \ViolineVier
