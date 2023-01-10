@@ -9,7 +9,7 @@ edit:
 	vi jaeger.ly +169 # $(NAME).ly
 c: clean
 clean:
-	rm -f $(NAME).pdf $(NAME).midi *.mid via_nova-tmp-*
+	rm -f $(NAME).pdf $(NAME).midi *.mid $(NAME)-tmp-*  $(NAME)-book.pdf
 l: listen
 listen: $(NAME).ly jaeger.ly
 	timidity via_nova.midi
