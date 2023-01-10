@@ -15,3 +15,7 @@ listen: $(NAME).ly jaeger.ly
 	timidity via_nova.midi
 ardour:
 	pw-jack /home/gonsolo/src/ardour/gtk2_ardour/ardev
+book: $(NAME)-book.pdf
+	evince $<
+$(NAME)-book.pdf: $(NAME).pdf
+	pdfbook2 $(NAME).pdf
