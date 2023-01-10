@@ -20,10 +20,7 @@
 	}
 }
 
-%{
-%}
-\pageBreak
+%\pageBreak
 \include "jaeger.ly"
-%{
-%}
+
 
