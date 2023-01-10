@@ -14,7 +14,7 @@ l: listen
 listen: $(NAME).ly jaeger.ly
 	timidity via_nova.midi
 ardour:
-	pw-jack /home/gonsolo/src/ardour/gtk2_ardour/ardev
+	pw-jack /home/gonsolo/src/ardour/gtk2_ardour/ardev ~/Dokumente/Ardour/ViaVenatoris/ViaVenatoris.ardour &
 book: $(NAME)-book.pdf
 	evince $<
 $(NAME)-book.pdf: $(NAME).pdf

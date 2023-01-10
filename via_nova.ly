@@ -4,7 +4,7 @@
 
 \header {
 	title = "Via Venatoris"
-	subtitle = "Dauer: 6:10"
+	subtitle = "Dauer: 6:11"
 	%composer = "A. Wendleder"
 	tagline = ##f
 }
